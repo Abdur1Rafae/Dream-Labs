@@ -97,7 +97,7 @@ const Main = () => {
             <div className='flex flex-col gap-8 h-full self-center'>
                 <h1 className='text-4xl'>Ready to turn your <span className='font-bold text-[#EF8354]'>Ideas</span> into <span className='font-extrabold bg-gradient-to-tr from-[#F7666F] to-[#57007B] text-transparent bg-clip-text '>Reality?</span></h1>
                 <p>We help businesses like yours create software that drives results</p>
-                <button className='bg-[#3D63EA] text-white px-4 py-4 shadow-lg w-40 text-xs rounded-md font-medium'>Let's get started!</button>
+                <button className='bg-[#3D63EA] text-white px-4 py-4 shadow-lg w-40 text-xs rounded-md font-medium'>Let&apos;s get started!</button>
             </div>
             <img src='/navPic.png'className='h-80 w-80 bg-white' alt='Image display'/>
         </div>

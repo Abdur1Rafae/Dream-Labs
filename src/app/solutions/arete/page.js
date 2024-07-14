@@ -88,8 +88,8 @@ const AretePage = () => {
                                         <p className='text-lg mt-4'>{service.description}</p> 
                                         <ul className='list-disc text-lg ml-4'>
                                             {
-                                                service.list.map((item)=> {
-                                                    return <li>
+                                                service.list.map((item, index)=> {
+                                                    return <li key={index}>
                                                         {item}
                                                     </li>
                                                 })

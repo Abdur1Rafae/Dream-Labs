@@ -26,12 +26,6 @@ const Main = () => {
             description: 'Born out of a vision, a single-minded objective that puts service before anything else, Swift Clearance and Forwarding Corp. surging forth to deliver the best services in the shipping and logistics scenario. Its meteoric rise stems out of a solid foundation. The management boasts of over 20 years of rich and varied experience in the shipping and freight forwarding industry.',
             onClick: ()=>{router.push('/solutions/arete')},
             img: 'pic3.jpg'
-        },
-        {
-            title: 'MessageR',
-            description: 'Born out of a vision, a single-minded objective that puts service before anything else, Swift Clearance and Forwarding Corp. surging forth to deliver the best services in the shipping and logistics scenario. Its meteoric rise stems out of a solid foundation. The management boasts of over 20 years of rich and varied experience in the shipping and freight forwarding industry.',
-            onClick: ()=>{},
-            img: 'pic4.jpg'
         }
     ]
 
@@ -193,7 +187,7 @@ const Main = () => {
                     <p className='mt-4'>Our <span className='bg-gradient-to-tr from-[#F7666F] to-[#57007B] text-transparent bg-clip-text'>delivery model</span> helps you cut costs and deliver within budget.</p>
                     <div className='bg-gradient-to-tr from-[#F7666F] to-[#57007B] mt-4'>
                         <div className='ml-1 bg-white p-2 text-xs'>
-                            <em className='bg-gradient-to-tr from-[#F7666F] to-[#57007B] text-transparent bg-clip-text'>"Simform is quick to identify larger problem with the Software so we decided to expand our scope to build new modules"</em>
+                            <em className='bg-gradient-to-tr from-[#F7666F] to-[#57007B] text-transparent bg-clip-text'>&quot;Simform is quick to identify larger problem with the Software so we decided to expand our scope to build new modules&quot;</em>
                         </div>
                     </div>
                 </div>

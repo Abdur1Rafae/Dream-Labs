@@ -39,12 +39,12 @@ const AretePage = () => {
         </div>
         <div className='bg-white md:h-72 w-full flex flex-col p-4 lg:px-48 items-center justify-center gap-4 md:gap-12'>
             <h2 className='font-bold text-3xl'>Limitations of Traditional Assessments</h2>
-            <p className='text-md text-center'>In today's educational landscape, one-size-fits-all assessments fail to account for the diverse abilities and learning styles of students. Traditional testing methods are time-consuming, lack personalization, and often do not provide actionable insights for educators. This results in a suboptimal learning experience, where the true potential of students remains untapped.</p>
+            <p className='text-md text-center'>In today&apos;s educational landscape, one-size-fits-all assessments fail to account for the diverse abilities and learning styles of students. Traditional testing methods are time-consuming, lack personalization, and often do not provide actionable insights for educators. This results in a suboptimal learning experience, where the true potential of students remains untapped.</p>
         </div>
         <div className='bg-[#F4F9FD] min-h-80 w-full flex flex-col md:flex-row p-4 lg:px-32 items-center gap-8 md:gap-16'>
             <div className='max-w-1/2'>
                 <h2 className='font-bold text-3xl'>Transforming Assessments with Arete</h2>
-                <p className='text-md mt-4'>Arete's in-depth assessments go beyond traditional grading. We provide clear and actionable insights that reveal each student's unique learning profile. We help you identify areas where students excel and pinpoint areas that require additional support.</p>
+                <p className='text-md mt-4'>Arete&apos;s in-depth assessments go beyond traditional grading. We provide clear and actionable insights that reveal each student&apos;s unique learning profile. We help you identify areas where students excel and pinpoint areas that require additional support.</p>
             </div>
             <div className='w-full h-full self-center flex  self-justify-center items-center'>
                 <img src='/AreteImgs.png' className=''/>
@@ -64,7 +64,7 @@ const AretePage = () => {
                     <img src='/Arete5.jpg' className='w-full'/>
                     <div className='p-4'>
                         <h4 className='font-bold text-lg'>Empowered Educators</h4>
-                        <p className='text-xs text-[#6C757D]'>With powerful analytics and detailed insights, educators can make informed decisions, customize their teaching strategies, and effectively support each student's learning journey.</p>
+                        <p className='text-xs text-[#6C757D]'>With powerful analytics and detailed insights, educators can make informed decisions, customize their teaching strategies, and effectively support each student&apos;s learning journey.</p>
                     </div>
                 </div>
                 <div className='w-full md:w-2/5 lg:w-1/5 bg-white shadow-md'>

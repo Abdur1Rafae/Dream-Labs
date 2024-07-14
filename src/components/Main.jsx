@@ -2,17 +2,19 @@
 
 import React from 'react'
 import Image from 'next/image'
-import { register } from 'swiper/element/bundle';
-import { Navigation, Pagination, Scrollbar, A11y, EffectCoverflow } from 'swiper/modules';
 import { useRouter } from 'next/navigation';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
 
-register();
+if (typeof window !== "undefined") {
+    window.$ = window.jQuery = require("jquery");
+  }
+  
+  import dynamic from "next/dynamic";
+  const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
+    ssr: false,
+  });
 
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
-import 'swiper/css/effect-coverflow';
 import SolutionsCard from './SolutionsCard';
 
 const Main = () => {
@@ -37,51 +39,61 @@ const Main = () => {
         {
             title: 'UX Driven Engineering',
             description: 'Unlike other companies, we are a UX first development company. Projects are driven by designers and they make sure design and experiences translate to code.',
-            img: 'rocket.jpg'
+            img: 'Picture16.png',
+            bg: 'bg-gradient-to-tr from-[#29272E] to-[#27272E]'
         },
         {
             title: 'Developing Shared Understanding',
             description: 'Unlike other companies, we are a UX first development company. Projects are driven by designers and they make sure design and experiences translate to code.',
-            img: 'rocket.jpg'
+            img: 'Picture11.png',
+            bg: 'bg-gradient-to-tr from-[#68DBF2] to-[#509CF5]'
         },
         {
             title: 'Proven Experience and Expertise',
             description: 'Unlike other companies, we are a UX first development company. Projects are driven by designers and they make sure design and experiences translate to code.',
-            img: 'rocket.jpg'
+            img: 'Picture12.png',
+            bg: 'bg-gradient-to-tr from-[#FF92AE] to-[#FF3D9A]'
         },
         {
             title: 'Security & Intellectual Property (IP)',
             description: 'Unlike other companies, we are a UX first development company. Projects are driven by designers and they make sure design and experiences translate to code.',
-            img: 'rocket.jpg'
+            img: 'Picture13.png',
+            bg: 'bg-gradient-to-tr from-[#67E9F1] to-[#24E795]'
         },
         {
             title: 'Code Reviews',
             description: 'Unlike other companies, we are a UX first development company. Projects are driven by designers and they make sure design and experiences translate to code.',
-            img: 'rocket.jpg'
+            img: 'Picture14.png',
+            bg: 'bg-gradient-to-tr from-[#FFEF5E] to-[#F7936F]'
         },
         {
             title: 'Quality Assurance & Testing',
             description: 'Unlike other companies, we are a UX first development company. Projects are driven by designers and they make sure design and experiences translate to code.',
-            img: 'rocket.jpg'
+            img: 'Picture15.png',
+            bg: 'bg-gradient-to-tr from-[#F76680] to-[#57007B]'
         },
     ]
 
     const servicesData = [
         {
             title: 'Web Development',
-            description: 'Create a compelling online presence with our web development services. We build responsive, user-friendly websites that reflect your brand’s identity.'
+            description: 'Create a compelling online presence with our web development services. We build responsive, user-friendly websites that reflect your brand’s identity.',
+            img: 'webdev.png'
         },
         {
             title: 'Mobile App Development',
-            description: 'Engage your audience with intuitive and powerful mobile applications. We develop apps that deliver seamless user experiences on all platforms.'
+            description: 'Engage your audience with intuitive and powerful mobile applications. We develop apps that deliver seamless user experiences on all platforms.',
+            img: 'MobApp.png'
         },
         {
             title: 'UI/UX Design',
-            description: 'Design that captivates and engages. Our UI/UX experts craft interfaces that are both aesthetically pleasing and user-centric.'
+            description: 'Design that captivates and engages. Our UI/UX experts craft interfaces that are both aesthetically pleasing and user-centric.',
+            img: 'UIUX.png'
         },
         {
             title: 'Consulting & Strategy',
-            description: 'Navigate the digital landscape with confidence. Our consulting services help you devise strategies that drive innovation and business success.'
+            description: 'Navigate the digital landscape with confidence. Our consulting services help you devise strategies that drive innovation and business success.',
+            img: 'ConStrat.png'
         }
     ]
 
@@ -93,51 +105,47 @@ const Main = () => {
                 <p>We help businesses like yours create software that drives results</p>
                 <button className='bg-[#3D63EA] text-white px-4 py-4 shadow-lg w-40 text-xs rounded-md font-medium'>Let's get started!</button>
             </div>
-            <img src='/nacPic.jpg'className='h-80 w-80 bg-white' alt='Image display'/>
+            <img src='/navPic.png'className='h-80 w-80 bg-white' alt='Image display'/>
         </div>
-        <div className='bg-transparent mt-12 mb-12 hidden md:block'>
+        <div className='bg-transparent mt-12 mb-12'>
             <h3 className='font-bold text-xl text-center mb-8'>Services we offer</h3>
-            <swiper-container modules={[Navigation, Pagination, Scrollbar, A11y, EffectCoverflow]} slides-per-view="3" Pagination={{Clickable: true}}>
+            <OwlCarousel className='owl-theme' margin={25}
+                responsive={{
+                    0: {
+                        items: 1,
+                        nav: true,
+                        center: true
+                    },
+                    768: {
+                        items: 2,
+                        nav: true,
+                        margin: 25
+                    },
+                    900: {
+                        items: 3,
+                        nav: true,
+                        maergin: 25
+                    },
+                    1025: {
+                        items: 4,
+                    }
+                }}>
                 {
                     servicesData.map((service) => {
-                        return <swiper-slide>
-                            <div className='w-80 h-72 ml-8'>
+                        return <div className='w-full sm:w-80 h-72'>
                                 <div className='bg-gradient-to-tr from-[#F7666F] to-[#57007B] w-full h-60 p-[2px] rounded-md'>
                                     <div className='bg-white w-full h-full rounded-md py-4 px-2'>
                                         <div className='bg-gradient-to-tr from-[#F7666F] w-12 to-[#57007B] p-[1px] rounded-full'> 
-                                            <img src={`/rocket.jpg`} className='w-12 h-12 rounded-full'/>
+                                            <img src={`/${service.img}`} className='w-12 h-12 rounded-full bg-white p-2'/>
                                         </div>
                                         <h5 className='font-medium mt-2'>{service.title}</h5>
                                         <p className='text-sm mt-4 text-[#4A5568]'>{service.description}</p>
                                     </div>
                                 </div>
                             </div>
-                        </swiper-slide>
                     })
                 }
-            </swiper-container>
-        </div>
-        <div className='bg-transparent mt-12 mb-12 block md:hidden'>
-            <h3 className='font-bold text-xl text-center mb-8'>Services we offer</h3>
-            <swiper-container modules={[Navigation, Pagination, Scrollbar, A11y, EffectCoverflow]} slides-per-view="1" Pagination={{Clickable: true}}>
-                {
-                    servicesData.map((service) => {
-                        return <swiper-slide>
-                            <div className='w-80 h-72 ml-8'>
-                                <div className='bg-gradient-to-tr from-[#F7666F] to-[#57007B] w-full h-60 p-[2px] rounded-md'>
-                                    <div className='bg-white w-full h-full rounded-md py-4 px-2'>
-                                        <div className='bg-gradient-to-tr from-[#F7666F] w-12 to-[#57007B] p-[1px] rounded-full'> 
-                                            <img src={`/rocket.jpg`} className='w-12 h-12 rounded-full'/>
-                                        </div>
-                                        <h5 className='font-medium mt-2'>{service.title}</h5>
-                                        <p className='text-sm mt-4 text-[#4A5568]'>{service.description}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </swiper-slide>
-                    })
-                }
-            </swiper-container>
+            </OwlCarousel>
         </div>
         <div className='bg-white mb-12 flex justify-center items-center p-4'>
             <div className='flex flex-col-reverse md:flex-row justify-around items-center px-4 md:px-16'>
@@ -157,8 +165,8 @@ const Main = () => {
                 })
             }
         </div>
-        <div className='w-full h-full flex flex-col gap-4 items-center justify-center bg-white mb-12'>
-            <hr className='w-20 h-2 bg-gradient-to-tr from-[#F7666F] to-[#57007B] rounded-md mt-8'/>
+        <div className='w-full h-full flex flex-col gap-4 items-center justify-center bg-white mb-12 py-8'>
+            <hr className='w-20 h-2 bg-gradient-to-tr from-[#F7666F] to-[#57007B] rounded-md'/>
             <h2 className='text-xl'>Way of builidng <span className='font-bold'>Great Products</span></h2>
             <div className='w-10/12 flex flex-col-reverse md:flex-row justify-around mt-8 items-center'>
                 <div className='md:w-1/2 w-full'>
@@ -178,7 +186,7 @@ const Main = () => {
                 <Image src={'/collab.jpg'} width={300} height={300} className='rounded-xl'/>
             </div>
             <div className='w-10/12 flex flex-col-reverse md:flex-row justify-around mt-8 items-center'>
-                <Image src={'/collab.jpg'} width={300} height={300} className='rounded-xl'/>
+                <Image src={'/working.png'} width={300} height={300} className='rounded-xl'/>
                 <div className='md:w-1/2 w-full'>
                     <h3 className='font-bold text-lg'>Build the right team to scale</h3>
                     <p className='text-sm'>Finding the right talent is not easy. We help you find the talent that suits your needs, follows your processes, and sticks with you long term (not the case with freelancers</p>
@@ -194,11 +202,11 @@ const Main = () => {
         <div className='w-full h-full flex flex-col gap-4 items-center justify-center mb-12'>
             <hr className='w-20 h-2 bg-gradient-to-tr from-[#F7666F] to-[#57007B] rounded-md'/>
             <h2 className='text-xl'>Our <span className='font-bold'>Design & Development</span> approach</h2>
-            <div className='px-8 md:px-32'>
+            <div className='px-8 lg:px-32'>
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
                     {
                         approachData.map((apr) => {
-                            return <Skillbox img={apr.img} title={apr.title} description={apr.description}/>
+                            return <Skillbox img={apr.img} title={apr.title} description={apr.description} backgr={apr.bg}/>
                         })
                     }
                 </div>
@@ -208,10 +216,10 @@ const Main = () => {
   )
 }
 
-const Skillbox = ({img, title, description}) => {
+const Skillbox = ({img, title, description, backgr}) => {
     return (
-        <div className='bg-white flex px-4 py-12 shadow-md gap-4 items-start'>
-            <Image src={`/${img}`} width={50} height={50}/>
+        <div className={`bg-white flex px-4 py-6 lg:py-12 shadow-md gap-4 items-start`}>
+            <img src={`/${img}`} className={`w-12 h-12 rounded-md p-2 ${backgr}`}/>
             <div>
                 <h5 className='text-lg font-medium'>{title}</h5>
                 <p className='mt-2 text-xs'>{description}</p>

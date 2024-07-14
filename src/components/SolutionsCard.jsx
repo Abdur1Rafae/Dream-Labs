@@ -3,7 +3,7 @@ import React from 'react'
 
 const SolutionsCard = ({title, description, onClick, img}) => {
   return (
-    <div className='flex flex-col md:flex-row rounded-lg border-2 w-11/12 md:w-8/12 shadow-md bg-white'>
+    <div className='flex flex-col md:flex-row rounded-lg border-2 w-11/12 lg:w-8/12 shadow-md bg-white'>
         <img src={`/${img}`} className='md:w-64 h-64 rounded-lg'/>
         <div className='flex flex-col justify-center px-2 md:px-8'>
             <h4 className='font-medium text-lg'>{title}</h4>

@@ -79,8 +79,8 @@ const AretePage = () => {
         <div className='bg-blue-50 w-full m-auto'>
             <swiper-container modules={[Navigation, Pagination, Scrollbar, A11y, EffectCoverflow]} slides-per-view="1" Navigation={true}>
                 {
-                    servicesData.map((service) => {
-                        return <swiper-slide>
+                    servicesData.map((service, index) => {
+                        return <swiper-slide key={index}>
                             <div className='w-full h-full px-12'>
                                 <div className='w-full h-full rounded-md py-4 px-2 flex flex-col-reverse md:flex-row justify-center gap-12'>
                                     <div className='flex flex-col justify-center'>

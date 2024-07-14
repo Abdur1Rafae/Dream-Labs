@@ -131,8 +131,8 @@ const Main = () => {
                     }
                 }}>
                 {
-                    servicesData.map((service) => {
-                        return <div className='w-full sm:w-80 h-72'>
+                    servicesData.map((service, index) => {
+                        return <div className='w-full sm:w-80 h-72' key={index}>
                                 <div className='bg-gradient-to-tr from-[#F7666F] to-[#57007B] w-full h-60 p-[2px] rounded-md'>
                                     <div className='bg-white w-full h-full rounded-md py-4 px-2'>
                                         <div className='bg-gradient-to-tr from-[#F7666F] w-12 to-[#57007B] p-[1px] rounded-full'> 
@@ -160,8 +160,8 @@ const Main = () => {
             <hr className='w-20 h-2 bg-gradient-to-tr from-[#F7666F] to-[#57007B] rounded-md'/>
             <h2 className='text-xl'>Our recent <span className='font-bold'>Solutions</span></h2>
             {
-                solutionsData.map(solution => {
-                    return <SolutionsCard img={solution.img} title={solution.title} description={solution.description} onClick={solution.onClick}/>
+                solutionsData.map((solution, index) => {
+                    return <SolutionsCard key={index} img={solution.img} title={solution.title} description={solution.description} onClick={solution.onClick}/>
                 })
             }
         </div>
@@ -205,8 +205,8 @@ const Main = () => {
             <div className='px-8 lg:px-32'>
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
                     {
-                        approachData.map((apr) => {
-                            return <Skillbox img={apr.img} title={apr.title} description={apr.description} backgr={apr.bg}/>
+                        approachData.map((apr, index) => {
+                            return <Skillbox key={index}  img={apr.img} title={apr.title} description={apr.description} backgr={apr.bg}/>
                         })
                     }
                 </div>

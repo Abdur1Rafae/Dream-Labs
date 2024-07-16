@@ -126,7 +126,7 @@ const Main = () => {
                 }}>
                 {
                     servicesData.map((service, index) => {
-                        return <div className='w-full sm:w-80 h-72' key={index}>
+                        return <div className='w-full sm:w-80 h-72 p-4 md:p-2' key={index}>
                                 <div className='bg-gradient-to-tr from-[#F7666F] to-[#57007B] w-full h-60 p-[2px] rounded-md'>
                                     <div className='bg-white w-full h-full rounded-md py-4 px-2'>
                                         <div className='bg-gradient-to-tr from-[#F7666F] w-12 to-[#57007B] p-[1px] rounded-full'> 
@@ -212,8 +212,8 @@ const Main = () => {
 
 const Skillbox = ({img, title, description, backgr}) => {
     return (
-        <div className={`bg-white flex px-4 py-6 lg:py-12 shadow-md gap-4 items-start`}>
-            <img src={`/${img}`} className={`w-12 h-12 rounded-md p-2 ${backgr}`}/>
+        <div className={`bg-white flex px-4 py-6 shadow-md gap-4 items-start`}>
+            <img src={`/${img}`} className={`w-12 h-12 rounded-md p-2 mt-2 ${backgr}`}/>
             <div>
                 <h5 className='text-lg font-medium'>{title}</h5>
                 <p className='mt-2 text-xs'>{description}</p>

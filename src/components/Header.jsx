@@ -10,7 +10,7 @@ const Header = () => {
     const [display, setDisplay] = useState(false)
     return (
         <>
-            <header className='h-12 shadow-md shadow-slate-200 flex justify-between items-center text-sm font-semibold text-gray-500 bg-white'>
+            <header className='h-12 md:fixed md:top-0 shadow-md w-full z-20 shadow-slate-200 flex justify-between items-center text-sm font-semibold text-gray-500 bg-white'>
                 <button className='md:hidden' onClick={() => setDisplay(prev => !prev)}>
                     <FaBars size={20} className='ml-2' />
                 </button>

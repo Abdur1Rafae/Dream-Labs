@@ -20,10 +20,11 @@ const Header = () => {
                 <span className="ml-2 text-xl font-bold">GenLabs</span>
                  </div>
                 <div className='hidden md:flex gap-8'>
-                    <Link href='/about'>About us</Link>
+                    <Link href='/about'>About</Link>
                     <Link href='/services'>Services</Link>
-                    <Link href=''>How it Works</Link>
-                    <Link href=''>Hire</Link>
+                    <Link href='/services'>Latest Work</Link>
+                    <Link href=''>Why Us</Link>
+                    <Link href=''>Approach</Link>
                 </div>
                 <button className=' border-2 border-white bg-transparent px-3 py-2 text-white rounded-md font-inter mr-2' onClick={() => router.push('/contact-us')}>Contact us</button>
             </header>

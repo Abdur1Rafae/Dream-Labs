@@ -26,7 +26,7 @@ const Footer = () => {
             className="inline-flex items-center"
           >
             <Image src="/logo.png" alt="Logo" width={35} height={35} />
-            <span className="ml-2 text-xl font-bold tracking-wide text-white uppercase">
+            <span className="ml-2 text-xl font-bold tracking-wide text-white">
               GenLabs
             </span>
           </a>

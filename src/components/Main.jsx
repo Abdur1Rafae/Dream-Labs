@@ -18,6 +18,7 @@ if (typeof window !== "undefined") {
 import SolutionsCard from './SolutionsCard';
 
 const Main = () => {
+
     const router= useRouter()
     
     const solutionsData = [
@@ -91,7 +92,7 @@ const Main = () => {
             </div>
         </div>
         
-        <div className='bg-white flex justify-center p-8'>
+        <div id="about" className='bg-white flex justify-center p-8'>
             <div className='flex flex-col-reverse md:flex-row justify-around items-center px-4 md:px-16'> 
                 <Image src={'/image.png'} width={350} height={350} className='rounded-xl mt-6'/>
                 <div className='w-full md:w-1/2 max-w-screen-md mx-auto'>
@@ -101,7 +102,7 @@ const Main = () => {
             </div>
         </div>
 
-        <div className='w-full bg-transparent flex flex-col items-center justify-center p-8'>
+        <div id="services" className='w-full bg-transparent flex flex-col items-center justify-center p-8'>
             <hr className='w-20 h-1 bg-gradient-custom rounded-md'/>
             <h3 className='font-sans font-bold text-xl text-black mt-4 text-center mb-4'>OUR <span className='bg-gradient-custom text-transparent bg-clip-text'>SERVICES</span></h3>
             {/* <h2 class="text-sm mb-8 max-w-screen-sm px-4 text-center ">With a deep understanding of industry trends and cutting-edge technologies, we provide a comprehensive suite of services, designed to drive innovation and fuel growth.</h2> */}
@@ -162,7 +163,7 @@ const Main = () => {
             </video>
         </div>
 
-        <div className='bg-transparent w-full flex flex-col items-center justify-center p-8'>
+        <div id="latest-work" className='bg-transparent w-full flex flex-col items-center justify-center p-8'>
             <hr className='w-20 h-1 bg-gradient-custom rounded-md'/>
             <h2 className='font-sans font-bold text-xl text-black mt-4 text-center mb-4'><span className='font-bold bg-gradient-custom text-transparent bg-clip-text'>LATEST</span> WORK</h2>
             {
@@ -172,7 +173,7 @@ const Main = () => {
             }
         </div>
 
-        <div className='bg-white w-full flex flex-col gap-4 items-center justify-center p-8'>
+        <div id="why-us" className='bg-white w-full flex flex-col gap-4 items-center justify-center p-8'>
             <hr className='w-20 h-1 bg-gradient-custom rounded-md'/>
             <h2 className='text-xl font-bold'>WHY <span className='bg-gradient-custom text-transparent bg-clip-text'>US</span></h2>
             <div className='lg:px-16'>
@@ -188,7 +189,7 @@ const Main = () => {
             </div>
         </div>
 
-        <div className='w-full bg-transparent flex flex-col items-center justify-center bg-transparent p-8'>
+        <div id="approach" className='w-full bg-transparent flex flex-col items-center justify-center bg-transparent p-8'>
         <hr className='w-20 h-1 bg-gradient-custom rounded-md'/>
             <h3 className='font-sans font-bold text-xl text-black mt-4 text-center mb-4'>OUR <span className='bg-gradient-custom text-transparent bg-clip-text'>DESIGN &</span> <span className='font-medium'> DEVELOPMENT</span> APPROACH</h3>
             {/* <h2 class="text-sm mb-8 max-w-screen-sm px-4 text-center "> We transform your vision into reality through a streamlined and collaborative process. From initial consultation to ongoing maintenance, we ensure every step is meticulously executed to deliver exceptional results.</h2> */}

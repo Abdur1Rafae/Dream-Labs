@@ -105,7 +105,7 @@ const Main = () => {
         <div id="services" className='w-full bg-transparent flex flex-col items-center justify-center p-8'>
             <hr className='w-20 h-1 bg-gradient-custom rounded-md'/>
             <h3 className='font-sans font-bold text-xl text-black mt-4 text-center mb-4'>OUR <span className='bg-gradient-custom text-transparent bg-clip-text'>SERVICES</span></h3>
-            {/* <h2 class="text-sm mb-8 max-w-screen-sm px-4 text-center ">With a deep understanding of industry trends and cutting-edge technologies, we provide a comprehensive suite of services, designed to drive innovation and fuel growth.</h2> */}
+            {/* <h2 className="text-sm mb-8 max-w-screen-sm px-4 text-center ">With a deep understanding of industry trends and cutting-edge technologies, we provide a comprehensive suite of services, designed to drive innovation and fuel growth.</h2> */}
             <OwlCarousel className='owl-theme overflow-hidden' margin={25}
                 responsive={{
                     0: {
@@ -128,7 +128,7 @@ const Main = () => {
                 }}>
                 {
                     servicesData.map((service, index) => {
-                        return <div className="border-2 border-gradient-custom flex justify-center items-center">
+                        return <div key={index} className="border-2 border-gradient-custom flex justify-center items-center">
                         <div className="flex flex-col justify-between w-72 sm:w-96 h-96 bg-black bg-center text-gray-800 shadow-md overflow-hidden" style={{ backgroundImage: `url(/${service.img})` }} >
                         <div className='absolute w-full inset-0 bg-black opacity-50 z-0'></div>
                           <div className="flex justify-between items-center ml-4 pr-8">
@@ -189,107 +189,107 @@ const Main = () => {
             </div>
         </div>
 
-        <div id="approach" className='w-full bg-transparent flex flex-col items-center justify-center bg-transparent p-8'>
+        <div id="approach" className='w-full bg-transparent flex flex-col items-center justify-center p-8'>
         <hr className='w-20 h-1 bg-gradient-custom rounded-md'/>
             <h3 className='font-sans font-bold text-xl text-black mt-4 text-center mb-4'>OUR <span className='bg-gradient-custom text-transparent bg-clip-text'>DESIGN &</span> <span className='font-medium'> DEVELOPMENT</span> APPROACH</h3>
-            {/* <h2 class="text-sm mb-8 max-w-screen-sm px-4 text-center "> We transform your vision into reality through a streamlined and collaborative process. From initial consultation to ongoing maintenance, we ensure every step is meticulously executed to deliver exceptional results.</h2> */}
-            <div class="container">
-                <div class="flex flex-col md:grid grid-cols-9 mx-auto p-2">
+            {/* <h2 className="text-sm mb-8 max-w-screen-sm px-4 text-center "> We transform your vision into reality through a streamlined and collaborative process. From initial consultation to ongoing maintenance, we ensure every step is meticulously executed to deliver exceptional results.</h2> */}
+            <div className="container">
+                <div className="flex flex-col md:grid grid-cols-9 mx-auto p-2">
                     {/* Consultation */}
-                    <div class="flex flex-row-reverse md:contents">
-                    <div class="bg-white col-start-2 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md">
+                    <div className="flex flex-row-reverse md:contents">
+                    <div className="bg-white col-start-2 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md">
                             <h5 className='text-sm font-bold font-mono'>Consultation</h5>
                             <p className='text-xs mt-1 text-gray-700'>After you send us an email, our team reviews the information and responds within 1-2 business days. We will schedule a meeting to understand your project and deliverables</p>
                     </div>
-                    <div class="col-start-5 col-end-6 md:mx-auto relative mr-10">
-                        <div class="h-full w-10 flex items-center justify-center">
-                        <div class="h-full w-1 bg-gradient-to-tr from-[#67E9F1] to-[#24E795] pointer-events-none"></div>
+                    <div className="col-start-5 col-end-6 md:mx-auto relative mr-10">
+                        <div className="h-full w-10 flex items-center justify-center">
+                        <div className="h-full w-1 bg-gradient-to-tr from-[#67E9F1] to-[#24E795] pointer-events-none"></div>
                         </div>
-                        <div class="w-10 h-10 absolute top-1/2 -mt-3 ">
+                        <div className="w-10 h-10 absolute top-1/2 -mt-3 ">
                         <img src={`consultation.png`} className={`rounded-full p-1 bg-gradient-to-tr from-[#67E9F1] to-[#24E795]`}/>
                         </div>
                     </div>
                     </div>
                     {/* Scope Definition */}
-                    <div class="flex md:contents">
-                    <div class="col-start-5 col-end-6 mr-10 md:mx-auto relative">
-                        <div class="h-full w-10 flex items-center justify-center">
-                        <div class="h-full w-1 bg-gradient-to-tr from-[#29272E] to-[#27272E] pointer-events-none"></div>
+                    <div className="flex md:contents">
+                    <div className="col-start-5 col-end-6 mr-10 md:mx-auto relative">
+                        <div className="h-full w-10 flex items-center justify-center">
+                        <div className="h-full w-1 bg-gradient-to-tr from-[#29272E] to-[#27272E] pointer-events-none"></div>
                         </div>
-                        <div class="w-10 h-10 absolute top-1/2 -mt-3 ">
+                        <div className="w-10 h-10 absolute top-1/2 -mt-3 ">
                         <img src={`scope.png`} className={`rounded-full p-1 bg-gradient-to-tr from-[#29272E] to-[#27272E]`}/>
                         </div>
                     </div>
-                    <div class="bg-white col-start-6 col-end-9 p-4 rounded-xl my-4 mr-auto shadow-md">
-                        <h3 class="text-sm font-bold font-mono">Scope Definition</h3>
-                        <p class="text-xs mt-1 text-gray-700">
+                    <div className="bg-white col-start-6 col-end-9 p-4 rounded-xl my-4 mr-auto shadow-md">
+                        <h3 className="text-sm font-bold font-mono">Scope Definition</h3>
+                        <p className="text-xs mt-1 text-gray-700">
                         We define the project scope, outlining key features and requirements to ensure clarity and alignment with your goals.
                         </p>
                     </div>
                     </div>
                     {/* UI/UX Design */}
-                    <div class="flex flex-row-reverse md:contents">
-                    <div class="bg-white col-start-2 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md">
+                    <div className="flex flex-row-reverse md:contents">
+                    <div className="bg-white col-start-2 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md">
                             <h5 className='text-sm font-bold font-mono'>UI/UX Design</h5>
                             <p className='text-xs mt-1 text-gray-700'>Our design team creates intuitive and engaging user interfaces, focusing on user experience and aesthetics.
 
 </p>
                     </div>
-                    <div class="col-start-5 col-end-6 md:mx-auto relative mr-10">
-                        <div class="h-full w-10 flex items-center justify-center">
-                        <div class="h-full w-1 bg-gradient-to-tr from-[#FF92AE] to-[#FF3D9A] pointer-events-none"></div>
+                    <div className="col-start-5 col-end-6 md:mx-auto relative mr-10">
+                        <div className="h-full w-10 flex items-center justify-center">
+                        <div className="h-full w-1 bg-gradient-to-tr from-[#FF92AE] to-[#FF3D9A] pointer-events-none"></div>
                         </div>
-                        <div class="w-10 h-10 absolute top-1/2 -mt-3 ">
+                        <div className="w-10 h-10 absolute top-1/2 -mt-3 ">
                         <img src={`ux.png`} className={`rounded-full p-1 bg-gradient-to-tr from-[#FF92AE] to-[#FF3D9A]`}/>
                         </div>
                     </div>
                     </div>
                     {/* Development*/}
-                    <div class="flex md:contents">
-                    <div class="col-start-5 col-end-6 mr-10 md:mx-auto relative">
-                        <div class="h-full w-10 flex items-center justify-center">
-                        <div class="h-full w-1 bg-gradient-to-tr from-[#68DBF2] to-[#509CF5] pointer-events-none"></div>
+                    <div className="flex md:contents">
+                        <div className="col-start-5 col-end-6 mr-10 md:mx-auto relative">
+                            <div className="h-full w-10 flex items-center justify-center">
+                            <div className="h-full w-1 bg-gradient-to-tr from-[#68DBF2] to-[#509CF5] pointer-events-none"></div>
+                            </div>
+                            <div className="w-10 h-10 absolute top-1/2 -mt-3 ">
+                            <img src={`Picture11.png`} className={`rounded-full p-1 bg-gradient-to-tr from-[#68DBF2] to-[#509CF5]`}/>
+                            </div>
                         </div>
-                        <div class="w-10 h-10 absolute top-1/2 -mt-3 ">
-                        <img src={`Picture11.png`} className={`rounded-full p-1 bg-gradient-to-tr from-[#68DBF2] to-[#509CF5]`}/>
+                        <div className="bg-white col-start-6 col-end-9 p-4 rounded-xl my-4 mr-auto shadow-md">
+                            <h3 className="text-sm font-bold font-mono">Development</h3>
+                            <p className="text-xs mt-1 text-gray-700">
+                            We develop the project using the latest technologies, ensuring high performance and scalability.
+                            </p>
                         </div>
-                    </div>
-                    <div class="bg-white col-start-6 col-end-9 p-4 rounded-xl my-4 mr-auto shadow-md">
-                        <h3 class="text-sm font-bold font-mono">Development</h3>
-                        <p class="text-xs mt-1 text-gray-700">
-                        We develop the project using the latest technologies, ensuring high performance and scalability.
-                        </p>
-                    </div>
                     </div>
                     {/* Feedback and Revisions */}
-                    <div class="flex flex-row-reverse md:contents">
-                    <div class="bg-white col-start-2 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md">
-                        <h5 className='text-sm font-bold font-mono'>Feedback and Revisions</h5>
-                        <p className='text-xs mt-1 text-gray-700'>We share progress and gather your feedback, making necessary revisions to ensure the project meets your expectations.
-                        </p>
-                    </div>
-                    <div class="col-start-5 col-end-6 md:mx-auto relative mr-10">
-                        <div class="h-full w-10 flex items-center justify-center">
-                        <div class="h-full w-1 bg-gradient-custom pointer-events-none"></div>
+                    <div className="flex flex-row-reverse md:contents">
+                        <div className="bg-white col-start-2 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md">
+                            <h5 className='text-sm font-bold font-mono'>Feedback and Revisions</h5>
+                            <p className='text-xs mt-1 text-gray-700'>We share progress and gather your feedback, making necessary revisions to ensure the project meets your expectations.
+                            </p>
                         </div>
-                        <div class="w-10 h-10 absolute top-1/2 -mt-3 ">
-                        <img src={`revision.png`} className={`rounded-full p-1 bg-gradient-custom`}/>
+                        <div className="col-start-5 col-end-6 md:mx-auto relative mr-10">
+                            <div className="h-full w-10 flex items-center justify-center">
+                            <div className="h-full w-1 bg-gradient-custom pointer-events-none"></div>
+                            </div>
+                            <div className="w-10 h-10 absolute top-1/2 -mt-3 ">
+                            <img src={`revision.png`} className={`rounded-full p-1 bg-gradient-custom`}/>
+                            </div>
                         </div>
-                    </div>
                     </div>
                     {/* Maintenance */}
-                    <div class="flex md:contents">
-                    <div class="col-start-5 col-end-6 mr-10 md:mx-auto relative">
-                        <div class="h-full w-10 flex items-center justify-center">
-                        <div class="h-full w-1 bg-gradient-to-tr from-[#FFEF5E] to-[#F7936F] pointer-events-none"></div>
+                    <div className="flex md:contents">
+                    <div className="col-start-5 col-end-6 mr-10 md:mx-auto relative">
+                        <div className="h-full w-10 flex items-center justify-center">
+                        <div className="h-full w-1 bg-gradient-to-tr from-[#FFEF5E] to-[#F7936F] pointer-events-none"></div>
                         </div>
-                        <div class="w-10 h-10 absolute top-1/2 -mt-3 ">
+                        <div className="w-10 h-10 absolute top-1/2 -mt-3 ">
                         <img src={`Picture14.png`} className={`rounded-full p-1 bg-gradient-to-tr from-[#FFEF5E] to-[#F7936F]`}/>
                         </div>
                     </div>
-                    <div class="bg-white col-start-6 col-end-9 p-4 rounded-xl my-4 mr-auto shadow-md">
-                        <h3 class="text-sm font-bold font-mono">Maintenance</h3>
-                        <p class="text-xs mt-1 text-gray-700">After project completion, we provide ongoing maintenance and support to ensure everything runs smoothly.</p>
+                    <div className="bg-white col-start-6 col-end-9 p-4 rounded-xl my-4 mr-auto shadow-md">
+                        <h3 className="text-sm font-bold font-mono">Maintenance</h3>
+                        <p className="text-xs mt-1 text-gray-700">After project completion, we provide ongoing maintenance and support to ensure everything runs smoothly.</p>
                     </div>
                     </div>
                 </div>
@@ -303,7 +303,7 @@ const Main = () => {
 const Skillbox = ({img, title, description, backgr}) => {
     return (
                 <div
-                    class="relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 max-w-xs md:max-w-lg mx-auto border border-gradient-custom bg-white">
+                    className="relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 max-w-xs md:max-w-lg mx-auto border border-gradient-custom bg-white">
                     <div className="w-full md:w-1/3 md:h-1/4 bg-white grid place-items-center">
                         <img src={`/${img}`} alt="..." className="rounded-xl" />
                     </div>

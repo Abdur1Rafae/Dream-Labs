@@ -63,7 +63,7 @@ const AretePage = () => {
           Power of Areté
         </h2>
         <p className="text-base text-gray-700 md:text-base">
-        Arete combines a seamless UI with powerful features to elevate assessment processes for educators, recruiters, and candidates."
+        Arete combines a seamless UI with powerful features to elevate assessment processes for educators, recruiters, and candidates.
         </p>
       </div>
       <div className="grid max-w-screen-lg gap-8 lg:grid-cols-2 sm:mx-auto">

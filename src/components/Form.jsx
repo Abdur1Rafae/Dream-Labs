@@ -1,5 +1,5 @@
 "use client";
-import React, {useRef, useState} from 'react'
+import React, {useState} from 'react'
 import emailjs from '@emailjs/browser'
 
 
@@ -27,8 +27,8 @@ export const Form = () =>
 
 			<div className="flex flex-col justify-between">
 				<div className="space-y-2">
-					<h2 className="text-4xl font-bold leading-tight lg:text-5xl">Let's Begin!</h2>
-					<div className="dark:text-gray-600">Let us know about your project. We'd love to hear from you!</div>
+					<h2 className="text-4xl font-bold leading-tight lg:text-5xl">Let&apos;s Begin!</h2>
+					<div className="dark:text-gray-600">Let us know about your project. We&apos;d love to hear from you!</div>
 				</div>
 				<img src="doodle.svg" alt="" className="p-6 h-52 md:h-64" />
 			</div>

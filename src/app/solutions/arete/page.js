@@ -79,7 +79,7 @@ const AretePage = () => {
                 Adaptive Testing
               </h6>
               <p className="text-sm text-gray-900">
-              Dynamically adjusts the difficulty of questions based on the candidate's performance, enhancing assessment accuracy and providing a personalized learning experience.
+              Dynamically adjusts the difficulty of questions based on the candidate&apos;s performance, enhancing assessment accuracy and providing a personalized learning experience.
               </p>
               <hr className="w-full my-6 border-gray-300" />
             </div>
@@ -147,7 +147,7 @@ const AretePage = () => {
           How It Works
         </h2>
         <p className="text-base text-gray-100 md:text-base">
-        Arete simplifies the assessment process with its user-friendly interface and powerful features. Here's a step-by-step guide on how our platform works:
+        Arete simplifies the assessment process with its user-friendly interface and powerful features. Here&apos;s a step-by-step guide on how our platform works:
         </p>
       </div>
       <div className="mx-auto lg:max-w-2xl">

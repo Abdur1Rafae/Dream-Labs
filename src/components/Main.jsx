@@ -126,6 +126,7 @@ const Main = () => {
                 }}>
                 {
                     servicesData.map((service, index) => {
+<<<<<<< Updated upstream
                         return <div className='w-full sm:w-80 h-72 p-4 md:p-2' key={index}>
                                 <div className='bg-gradient-to-tr from-[#F7666F] to-[#57007B] w-full h-60 p-[2px] rounded-md'>
                                     <div className='bg-white w-full h-full rounded-md py-4 px-2'>
@@ -137,6 +138,31 @@ const Main = () => {
                                     </div>
                                 </div>
                             </div>
+=======
+                        return <div className=" flex justify-center items-center">
+                        <div className="flex flex-col justify-between w-72 sm:w-96 h-96 bg-center text-gray-800 shadow-md overflow-hidden" style={{ backgroundImage: `url(/${service.img})` }} >
+                        <div className='absolute inset-0 bg-black opacity-50 z-0'></div>
+                          <div className="flex justify-between items-center ml-4 pr-8">
+                          </div>
+                          <div className="z-10 bg-white shadow-md rounded-r-xl p-2 flex flex-col mr-4 mb-8">
+                            <h3 className="text-lg font-bold pb-1">{service.title}</h3>
+                            <p className="text-gray-500 text-sm">{service.description}</p>
+                          </div>
+                        </div>
+                      </div>
+                      
+                        // <div className='p-4' key={index}>
+                        //         <div className='bg-gradient-custom w-full h-60 p-[2px] rounded-md'>
+                        //             <div className='bg-white w-full h-full rounded-md py-4 px-2'>
+                        //                 <div className='bg-gradient-custom w-12 to-[#57007B] p-[1px] rounded-full'> 
+                        //                     <img src={`/${service.img}`} className='w-12 h-12 rounded-full bg-white p-2'/>
+                        //                 </div>
+                        //                 <h5 className='font-medium mt-2'>{service.title}</h5>
+                        //                 <p className='text-sm mt-4 text-[#4A5568]'>{service.description}</p>
+                        //             </div>
+                        //         </div>
+                        //     </div>
+>>>>>>> Stashed changes
                     })
                 }
             </OwlCarousel>

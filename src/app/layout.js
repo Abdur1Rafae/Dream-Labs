@@ -5,7 +5,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 
 export const metadata = {
-  title: "Dream Labs",
+  title: "GenLabs",
   description: "Bringing life to your ideas",
 };
 

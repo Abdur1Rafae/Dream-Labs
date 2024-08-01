@@ -29,33 +29,31 @@ const AretePage = () => {
   return (
     <section>
 
-      <div className="relative px-4 pt-16 mx-auto lg:py-32 md:px-8 xl:px-20 sm:max-w-xl md:max-w-full bg-black bg-contain bg-center md:bg-left" style={{ backgroundImage: "url('/arete.bg.webp')" }}>
-      <div className='absolute w-full inset-0 bg-black opacity-80 z-0'></div>
-      <div className="relative max-w-xl mx-auto lg:max-w-screen-xl">
-        <div className="mb-16 lg:max-w-lg lg:mb-0">
-          <div className="max-w-xl mb-6">
-            <h1 className='text-4xl md:text-4xl font-bold font-sans mb-4 text-white '><span className='bg-gradient-to-tr from-[#2C6491] to-[#FFFFFF] text-transparent bg-clip-text'>Areté</span> : Your Ultimate Assessment Solution</h1>
-            <p className="text-sm text-gray-100 md:text-base">
-            Areté is a state-of-the-art assessment platform designed to revolutionize the education and recruitment sectors. 
-            Our platform offers a seamless and efficient way to evaluate skills, knowledge, and competencies.
+    <div className="relative px-4 pt-16 mx-auto lg:py-32 md:px-8 xl:px-10 sm:max-w-xl md:max-w-full h-auto bg-gradient-to-tr from-slate-900 to-sky-700">
+      <div className="max-w-xl mx-auto lg:max-w-screen-xl">
+        <div className="mb-8 lg:max-w-lg lg:mb-0">
+          <div className="mb-6 max-w-xl">
+          <h1 className='max-w-lg mb-3 text-3xl font-medium tracking-tight text-white sm:text-3xl max-w-md '>Transform Your Assessment Experience with <span className='font-bold bg-gradient-to-tl from-gray-100 to-sky-500 text-transparent bg-clip-text'>ARETÉ</span></h1>
+            <p className="text-sm text-gray-100 md:text-base max-w-sm">
+            Discover a smarter, more efficient way to conduct assessments. Areté combines cutting-edge technology with user-friendly design to deliver unparalleled performance and accuracy.
             </p>
+          <button className=' mt-4  font-bold bg-transparent text-white' onClick={() => scrollToSection('arete-contact-form')}>Get in touch</button>
           </div>
-          <button className=' border-2 border-white bg-transparent px-3 py-2 text-white rounded-md font-inter mr-2' onClick={() => scrollToSection('arete-contact-form')}>Contact us</button>
         </div>
       </div>
-      <div className="relative flex justify-center h-full overflow-hidden lg:w-2/3 xl:w-1/2 lg:absolute lg:justify-start lg:bottom-0 lg:right-0 lg:items-end">
+      <div className="flex justify-center h-full overflow-hidden lg:w-1/2 xl:w-2/3 lg:absolute lg:justify-end lg:bottom-0 lg:right-0 lg:items-end">
         <img
-          src="/arete_home.svg"
-          className="object-contain object-top w-full h-64 max-w-xl -mb-16 rounded shadow-2xl lg:ml-64 xl:ml-8 lg:-mb-24 xl:-mb-28 lg:h-auto lg:max-w-screen-md"
+          src="/arete_cover.png"
+          className="object-contain object-top w-full max-w-xl -mb-16 rounded shadow-2xl shadown-gray-100 lg:ml-64 xl:ml-8 lg:-mb-24 xl:-mb-28 lg:h-auto lg:max-w-screen-md"
           alt=""
         />
       </div>
-      </div>
+    </div>
       
       <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10">
       <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
         <div>
-          <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-[#2C6491] uppercase rounded-full bg-teal-accent-400">
+          <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-gray-100 uppercase rounded-full bg-gradient-to-tr from-slate-900 to-sky-700">
             Features
           </p>
         </div>
@@ -119,17 +117,17 @@ const AretePage = () => {
         <div className="grid grid-cols-2 gap-5">
           <img
             className="object-cover w-full h-56 col-span-2 rounded shadow-lg"
-            src="https://www.diyesinternational.edu.in/wp-content/uploads/2024/02/image1-47.webp"
+            src="/grid1.webp"
             alt=""
           />
           <img
             className="object-cover w-full h-48 rounded shadow-lg"
-            src="https://www.timeshighereducation.com/sites/default/files/styles/the_breaking_news_image_style/public/istock-1408746714.jpg?itok=V5xgkkMh"
+            src="/grid2.jpg"
             alt=""
           />
           <img
             className="object-cover w-full h-48 rounded shadow-lg"
-            src="https://media.licdn.com/dms/image/C4E12AQFdlIQP1MBpWw/article-cover_image-shrink_600_2000/0/1623167384551?e=2147483647&v=beta&t=jJvKbrULXipDxlm9qQyBD2pUKm6z201Ja4QIYXnbKJY"
+            src="/grid3.jpeg"
             alt=""
           />
         </div>
@@ -139,7 +137,7 @@ const AretePage = () => {
       <div className="bg-black px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10">
       <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
         <div>
-          <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-[#2C6491] uppercase rounded-full bg-teal-accent-400">
+          <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-gray-100 uppercase rounded-full bg-gradient-to-tr from-slate-900 to-sky-700">
             Walkthrough
           </p>
         </div>
@@ -152,10 +150,7 @@ const AretePage = () => {
       </div>
       <div className="mx-auto lg:max-w-2xl">
         <div className="relative w-full transition-shadow duration-300 hover:shadow-xl">
-        <video autoPlay muted loop controls={true} className="w-full h-full object-cover">
-                <source src="/FYP.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-            </video>
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/OLAgIt5cLxA?si=a3IkxCFA5O-lSaeD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen='true'></iframe>
         </div>
       </div>
       </div>
@@ -163,7 +158,7 @@ const AretePage = () => {
       <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10">
       <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
         <div>
-          <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-[#2C6491] uppercase rounded-full bg-teal-accent-400">
+          <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-gray-100 uppercase rounded-full bg-gradient-to-tr from-slate-900 to-sky-700">
             Benefits
           </p>
         </div>

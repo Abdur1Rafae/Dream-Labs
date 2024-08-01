@@ -140,24 +140,13 @@ const Main = () => {
                         </div>
                       </div>
                       
-                        // <div className='p-4' key={index}>
-                        //         <div className='bg-gradient-custom w-full h-60 p-[2px] rounded-md'>
-                        //             <div className='bg-white w-full h-full rounded-md py-4 px-2'>
-                        //                 <div className='bg-gradient-custom w-12 to-[#57007B] p-[1px] rounded-full'> 
-                        //                     <img src={`/${service.img}`} className='w-12 h-12 rounded-full bg-white p-2'/>
-                        //                 </div>
-                        //                 <h5 className='font-medium mt-2'>{service.title}</h5>
-                        //                 <p className='text-sm mt-4 text-[#4A5568]'>{service.description}</p>
-                        //             </div>
-                        //         </div>
-                        //     </div>
                     })
                 }
             </OwlCarousel>
         </div>
 
         <div className='relative w-screen h-[60vh] bg-black'>
-            <video autoPlay muted loop controls={true} className="absolute top-0 left-0 w-full h-full object-cover">
+            <video autoPlay muted loop controls={true} className="w-full h-full object-contain ">
                 <source src="/awareness.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>

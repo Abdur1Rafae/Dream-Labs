@@ -53,7 +53,7 @@ const Footer = () => {
               (92) 323-2560367
             </a>
           </div>
-          <div className="flex">
+          {/* <div className="flex">
             <p className="mr-1 text-white ">Email:</p>
             <a
               href="mailto:info@lorem.mail"
@@ -63,7 +63,7 @@ const Footer = () => {
             >
               info@genlabs.com
             </a>
-          </div>
+          </div> */}
           <div className="flex">
             <p className="mr-1 text-white">Address:</p>
             <a
@@ -74,11 +74,11 @@ const Footer = () => {
               title="Our address"
               className="transition-colors duration-300 text-[#d9d9d9] hover:text-white"
             >
-              Defence, Karachi, Pakistan
+              Karachi, Pakistan
             </a>
           </div>
         </div>
-        <div>
+        {/* <div>
           <span className="text-base font-bold tracking-wide text-white">
             Social
           </span>
@@ -112,7 +112,7 @@ const Footer = () => {
           <p className="mt-4 text-xs text-[#E0E0E0]">
             Follow us on our social media pages for more updates
           </p>
-        </div>
+        </div> */}
       </div>
       <div className="flex flex-col-reverse justify-center pt-5 pb-5 border-t lg:flex-row">
         <p className="text-xs text-gray-400">

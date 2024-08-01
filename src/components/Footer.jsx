@@ -1,32 +1,43 @@
 import React from 'react'
+import Image from 'next/image';
 
 const Footer = () => {
-  return (
-    <footer className='bg-gradient-to-tr to-[#F1F1F5] from-[#E4ECF7] w-full h-full'>
-        <div className='w-full px-8 py-12 flex flex-col md:flex-row justify-around items-center'>
-            <h3 className='tex-lg md:text-2xl font-bold'>Your Ideas + Our  Expertise = <span className='bg-gradient-to-tr from-[#F7666F] to-[#57007B] text-transparent bg-clip-text'>Success</span></h3>
-            <div className='flex flex-col items-center mt-8 md:mt-0'>
-                <div className='flex gap-4'>
-                    <hr className='h-[5px] w-6 rounded rotate-45 bg-gradient-to-tr from-[#F16063] to-[#FFC656]'/>
-                    <hr className='h-[5px] w-6 rounded rotate-90 bg-gradient-to-tr from-[#F16063] to-[#FFC656]'/>
-                    <hr className='h-[5px] w-6 rounded -rotate-45 bg-gradient-to-tr from-[#F16063] to-[#FFC656]'/>
-                </div>
-                <button className=' mt-6 text-white font-medium bg-gradient-to-tr from-[#F16063] to-[#FFC656] px-12 py-1 text-sm'>Start Your Project</button>
-                <div className='flex gap-4 mt-6'>
-                    <hr className='h-[5px] w-6 rounded -rotate-45 bg-gradient-to-tr from-[#F16063] to-[#FFC656]'/>
-                    <hr className='h-[5px] w-6 rounded -rotate-90 bg-gradient-to-tr from-[#F16063] to-[#FFC656]'/>
-                    <hr className='h-[5px] w-6 rounded rotate-45 bg-gradient-to-tr from-[#F16063] to-[#FFC656]'/>
-                </div>
-            </div>
+    return (
+      <div className="relative mt-16 bg-[#032741]">
+
+        <svg
+          className="absolute top-0 w-full h-6 -mt-5 sm:-mt-10 sm:h-16"
+          preserveAspectRatio="none"
+          viewBox="0 0 1440 54"
+        >
+          <path
+            fill="#032741"
+            d="M0 22L120 16.7C240 11 480 1.00001 720 0.700012C960 1.00001 1200 11 1320 16.7L1440 22V54H1320C1200 54 960 54 720 54C480 54 240 54 120 54H0V22Z"
+          />
+        </svg>
+
+<div className="px-4 pt-10 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+      <div className="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="sm:col-span-2">
+          <a
+            href="/"
+            aria-label="Go home"
+            title="Company"
+            className="inline-flex items-center"
+          >
+            <Image src="/logo.png" alt="Logo" width={35} height={35} />
+            <span className="ml-2 text-xl font-bold tracking-wide text-white">
+              GenLabs
+            </span>
+          </a>
+          <div className="mt-2 lg:max-w-sm">
+            <p className="text-xs text-[#e0e0e0]">
+            GenLabs is a leading innovator in the tech industry, dedicated to developing cutting-edge solutions that drive business efficiency and growth. 
+            </p>
+            <p className="text-xs text-bold text-[#FFFFA5] mt-2"> Join us in shaping the future of technology.</p>
+            
+          </div>
         </div>
-<<<<<<< Updated upstream
-        <div className='w-full flex items-center justify-center p-2'>
-            <p className='text-xs'>© 2024 Copyright by MMR Developers. All rights reserved.</p>
-        </div>
-    </footer>
-  )
-}
-=======
         <div className="space-y-2 text-sm">
           <p className="text-base font-bold tracking-wide text-white">
             Contacts
@@ -42,7 +53,7 @@ const Footer = () => {
               (92) 323-2560367
             </a>
           </div>
-          {/* <div className="flex">
+          <div className="flex">
             <p className="mr-1 text-white ">Email:</p>
             <a
               href="mailto:info@lorem.mail"
@@ -52,7 +63,7 @@ const Footer = () => {
             >
               info@genlabs.com
             </a>
-          </div> */}
+          </div>
           <div className="flex">
             <p className="mr-1 text-white">Address:</p>
             <a
@@ -63,11 +74,11 @@ const Footer = () => {
               title="Our address"
               className="transition-colors duration-300 text-[#d9d9d9] hover:text-white"
             >
-              Karachi, Pakistan
+              Defence, Karachi, Pakistan
             </a>
           </div>
         </div>
-        {/* <div>
+        <div>
           <span className="text-base font-bold tracking-wide text-white">
             Social
           </span>
@@ -101,7 +112,7 @@ const Footer = () => {
           <p className="mt-4 text-xs text-[#E0E0E0]">
             Follow us on our social media pages for more updates
           </p>
-        </div> */}
+        </div>
       </div>
       <div className="flex flex-col-reverse justify-center pt-5 pb-5 border-t lg:flex-row">
         <p className="text-xs text-gray-400">
@@ -113,6 +124,5 @@ const Footer = () => {
       </div>
     );
   };
->>>>>>> Stashed changes
 
 export default Footer
